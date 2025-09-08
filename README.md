@@ -1,16 +1,215 @@
-## Hi there 👋
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Claim Care — Insurance Claim Assistance</title>
+  <meta name="description" content="Claim Care helps you get the most from your insurance — simple, transparent, and stress-free claim support." />
+  <meta property="og:title" content="Claim Care — Insurance Claim Assistance" />
+  <meta property="og:description" content="Your trusted partner for hassle-free insurance claims." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://dummyimage.com/1200x630/0b63c3/ffffff&text=Claim+Care" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🛡️</text></svg>">
+  <style>
+    :root{
+      --blue:#0b63c3; /* primary */
+      --blue-dark:#094b93;
+      --green:#29b25d; /* accent */
+      --text:#0b1736;
+      --muted:#5b6577;
+      --bg:#ffffff;
+      --soft:#f4f7fb;
+      --radius:18px;
+      --shadow:0 10px 25px rgba(11,99,195,.15);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .nav{position:sticky;top:0;background:#fff;border-bottom:1px solid #e9eef6;z-index:50}
+    .nav .inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{display:flex;gap:10px;align-items:center;font-weight:800;color:var(--blue);letter-spacing:.2px}
+    .brand img{width:40px;height:40px}
+    .nav a{color:var(--text);text-decoration:none;margin-left:18px}
+    .btn{display:inline-block;background:var(--blue);color:#fff;padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:700;box-shadow:var(--shadow)}
+    .btn:hover{background:var(--blue-dark)}
+    .btn.ghost{background:transparent;border:2px solid var(--blue);color:var(--blue);box-shadow:none}
+    .hero{padding:64px 0 24px;background:linear-gradient(180deg,#f7fbff,transparent)}
+    .hero .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+    h1{font-size:42px;line-height:1.15;margin:0 0 14px}
+    .lead{font-size:18px;color:var(--muted);margin:0 0 20px}
+    .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:20px}
+    .badges{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+    .badge{background:var(--soft);color:var(--blue);padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px;border:1px solid #e8f0fb}
+    .section{padding:56px 0}
+    .section h2{font-size:30px;margin:0 0 10px}
+    .muted{color:var(--muted)}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .item h3{margin:10px 0 6px;font-size:18px}
+    .price{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .price .card{padding:22px}
+    .price .amt{font-size:32px;font-weight:900;color:var(--blue)}
+    .price ul{margin:10px 0 0 18px;padding:0}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .footer{padding:30px 0;border-top:1px solid #e9eef6;color:var(--muted);font-size:14px}
+    .floating-whatsapp{position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;padding:14px 16px;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:0 12px 24px rgba(37,211,102,.35)}
+    .floating-whatsapp:hover{transform:translateY(-1px)}
+    @media (max-width:900px){
+      .hero .grid{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr}
+      .grid-4{grid-template-columns:1fr 1fr}
+      .price{grid-template-columns:1fr}
+      h1{font-size:34px}
+    }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container inner">
+      <div class="brand">
+        <img src="logo.png" alt="Claim Care Logo">
+        <span>Claim Care</span>
+      </div>
+      <div>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="btn" style="margin-left:18px">Start a Claim</a>
+      </div>
+    </div>
+  </nav>
 
-<!--
-**claimcare/Claimcare** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container grid">
+      <div>
+        <h1>Trusted help for hassle-free insurance claims</h1>
+        <p class="lead">We make claim settlements simple, transparent, and stress-free — so you get the most from your policy.</p>
+        <div class="cta">
+          <a class="btn" href="#contact">Start a Claim</a>
+          <a class="btn ghost" href="#pricing">See Pricing</a>
+        </div>
+        <div class="badges">
+          <span class="badge">Health • Motor • Property</span>
+          <span class="badge">No Claim, No Fee*</span>
+          <span class="badge">WhatsApp Support</span>
+        </div>
+        <small class="muted">*applies to select plans — see pricing</small>
+      </div>
+      <div class="card">
+        <strong>Quick Checklist</strong>
+        <ul style="margin:10px 0 0 18px">
+          <li>Policy copy & ID</li>
+          <li>Hospital bills / repair invoices</li>
+          <li>Discharge summary / FIR (as applicable)</li>
+        </ul>
+        <p class="muted" style="margin-top:10px">Send photos/PDFs on WhatsApp — we verify and file for you.</p>
+      </div>
+    </div>
+  </header>
 
-Here are some ideas to get you started:
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2>What we do</h2>
+      <p class="muted">End-to-end assistance for faster, fairer insurance settlements.</p>
+      <div class="grid-3">
+        <div class="card item">
+          <h3>Document Prep</h3>
+          <p>We verify and organize your bills, reports, and proofs to avoid rejections.</p>
+        </div>
+        <div class="card item">
+          <h3>Filing & Follow-ups</h3>
+          <p>We submit claims online/offline and keep pushing until approval.</p>
+        </div>
+        <div class="card item">
+          <h3>Maximizing Benefits</h3>
+          <p>We read the fine print and fight for the best possible settlement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+  <!-- PROCESS -->
+  <section id="process" class="section" style="background:var(--soft)">
+    <div class="container">
+      <h2>How it works</h2>
+      <div class="grid-4">
+        <div class="card item"><strong>1. Share Details</strong><p class="muted">Send docs on WhatsApp or email.</p></div>
+        <div class="card item"><strong>2. We Verify</strong><p class="muted">Quick review & policy check.</p></div>
+        <div class="card item"><strong>3. We File</strong><p class="muted">Accurate forms & submissions.</p></div>
+        <div class="card item"><strong>4. You Get Paid</strong><p class="muted">We track till settlement.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="section">
+    <div class="container">
+      <h2>Pricing</h2>
+      <p class="muted">Transparent plans. Pay for results.</p>
+      <div class="price">
+        <div class="card">
+          <h3>Basic</h3>
+          <div class="amt">₹3,000–₹5,000</div>
+          <p class="muted">Claims up to ₹1.5L</p>
+          <ul>
+            <li>Document guidance</li>
+            <li>Filing support</li>
+            <li>Email updates</li>
+          </ul>
+        </div>
+        <div class="card" style="border:2px solid var(--blue)">
+          <h3>Standard</h3>
+          <div class="amt">7–10%</div>
+          <p class="muted">₹1.5L–₹5L claims</p>
+          <ul>
+            <li>End-to-end handling</li>
+            <li>Priority follow-ups</li>
+            <li>WhatsApp support</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Premium</h3>
+          <div class="amt">10–15%</div>
+          <p class="muted">₹5L+ or appeal cases</p>
+          <ul>
+            <li>Senior expert team</li>
+            <li>Negotiation & appeals</li>
+            <li>No Claim, No Fee*</li>
+          </ul>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:8px">*No Claim, No Fee available on select cases after initial review.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section" style="background:var(--soft)">
+    <div class="container">
+      <h2>Start your claim</h2>
+      <p class="muted">Fastest reply on WhatsApp. You can also email us.</p>
+      <div class="card" style="display:grid;gap:14px">
+        <div><strong>WhatsApp:</strong> <a href="https://wa.me/919493056780" target="_blank" rel="noopener">+91 94930 56780</a></div>
+        <div><strong>Email:</strong> <a href="mailto:claimcare9@gmail.com">claimcare9@gmail.com</a></div>
+        <div><strong>Instagram:</strong> <a href="https://instagram.com/claim_care_" target="_blank" rel="noopener">@claim_care_</a></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container" style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap">
+      <div>© <span id="year"></span> Claim Care. All rights reserved.</div>
+      <div>Privacy • Terms • Refund Policy</div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="floating-whatsapp" href="https://wa.me/919493056780" target="_blank" rel="noopener">WhatsApp Us</a>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
