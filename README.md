@@ -198,7 +198,7 @@
     </div>
   </section>
 
-  <footer class="footer">
+  <footer class="footer"> 
     <div class="container" style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap">
       <div>© <span id="year"></span> Claim Care. All rights reserved.</div>
       <div>Privacy • Terms • Refund Policy</div>
